@@ -1,0 +1,133 @@
+/*********************************************
+GENERAL
+**********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	font-family: 'Ruda', sans-serif;
+	text-align: center;
+	color: #343434;
+
+
+}
+
+h1 {
+	font-size: 8rem;
+	font-weight: 900;
+	letter-spacing: -.0625rem;
+	line-height: -1rem;
+	color: #343434;
+}
+
+h2 {
+	letter-spacing: .175rem;
+	color: #343434;
+}
+
+h3 {
+	font-family: 'Domine', serif;
+	letter-spacing: .175rem;
+	color: #343434;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+
+	font-weight: 400;
+	line-height: 3.5rem;
+	color: #343434;
+}
+
+hr {
+	margin: 2em 0 2em 0;
+}
+
+#yellow {
+	color: #FFC107;
+}
+
+#top-bar {
+	width: 100%;
+	height: .825rem;
+	background-color: #FFC107;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+}
+	.header {
+		text-align: center;
+		display: block;
+	}
+		.name {
+	    margin-top: 2rem;
+	    margin-bottom: 1rem;
+	}
+		
+		
+	.ht span {
+		font-weight: 400;
+		letter-spacing: -.0625rem;
+		line-height: -1rem;
+		color: #343434;
+	}
+
+	.ht p,
+	.htdisplay p,
+	.htdisplay h3 {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	label {
+		vertical-align: top;
+		width: 8rem;
+		height: 10rem;
+		display: inline-block;
+		border: .0625rem solid #888;
+		font-size: 4rem;
+		font-family: 'Ruda', sans-serif;
+		font-weight: 400;
+		text-align: center;
+		padding-top: 2.2rem;
+
+	}
+
+	input {
+		display: inline-block;
+		padding-left: 3rem;
+		width: 20.5rem;
+		height: 10rem;
+		border: .0625rem solid #888;
+		font-size: 4rem;
+		font-family: 'Ruda', sans-serif;
+		font-weight: 400;
+
+
+	}
+	.htdisplay {
+		background-color: #FFC107;
+		width: 100%;
+		height: 100%;
+		margin: 5rem 0;
+		padding: 3rem;
+	}
+
+	.htdisplay p {
+		font-size: 4rem;
+	}
+
+	.htdisplay h3 {
+		font-size: 3rem;
+	}
+

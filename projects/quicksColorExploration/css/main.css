@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #e5f72e;
+	overflow: hidden;
+}
+
+.logo {
+	padding: 0;
+	width: 5rem;
+}
+
+
+header {
+	margin: 1rem 1.2rem;
+}
+
+#center {
+	position: absolute;
+	top: 48%;
+	left: 48%;
+}
+
+#spacebar {
+	margin: 0 0 0 -20%;
+}
+
+
+#originalContent {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: -.0625rem;
+	line-height: -1em;
+	width: 100%;
+	height: 100%;
+}
+
+scrollbar {
+	display: none;
+}

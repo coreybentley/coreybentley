@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Ruda:400,900|Domine:400,700');
+
+body {
+	font-size: normal 1em/1.5;
+	font-family: 'Ruda', sans-serif;
+}
+
+.name {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: -.0625rem;
+	line-height: -1rem;	
+	margin: -5px 0 0 .3rem;
+	padding: 0 0 0 0;
+
+}
+
+.companyName {
+	display: block;
+	font-size: .75rem;
+	font-weight: 400;
+	letter-spacing: -.0625rem;
+	line-height: -1rem;	
+	margin: -5px 0 0 .75rem;
+	padding: 0 0 0 0;
+}
+
+h1 {
+	font-weight: 400;
+	letter-spacing: -.0625rem;
+	line-height: -1em;
+	color: #343434;
+}
+
+h2 {
+	letter-spacing: .175rem;
+	color: #343434;
+}
+
+h3 {
+	font-family: 'Domine', serif;
+	letter-spacing: .175rem;
+	color: #FFC107;
+}

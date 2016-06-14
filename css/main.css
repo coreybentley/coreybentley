@@ -1,0 +1,471 @@
+/*********************************************
+GENERAL
+**********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+#top-bar {
+	width: 100%;
+	height: .825rem;
+	background-color: #FFC107;
+}
+
+#container {
+	margin: 0 auto;
+	width: 80%;
+}
+	#header {
+		text-align: center;
+		display: block;
+	}
+		#name {
+	    margin-top: 2rem;
+	    margin-bottom: 1rem;
+		}
+			#name h1 {
+				font-size: 5rem;
+				margin: 0;
+				padding: 0;
+			}
+			#name h3 {
+				font-size: 2.5rem;
+				margin: 0;
+				padding: 0;
+				margin-top: 0;
+			}
+		#logo{
+			z-index: 0;
+			margin: 0 auto 1rem auto;
+			width: 6rem;
+	    height: 6rem;
+			position: relative;		
+		}  
+			#clouds {
+				position: relative;
+			}
+
+			#cloud1 {
+				z-index: 4;
+				width: 1.25rem; height: .375rem;
+				background: #fff;
+				
+				border-radius: 1.25rem;
+				-moz-border-radius: 1.25rem;
+				-webkit-border-radius: 1.25rem;
+				
+				position: absolute; 
+				top: 1.7rem;
+				left: 1rem;
+			}
+
+			#cloud1:before, #cloud1:after {
+				content: '';
+				position: absolute; 
+				background: #fff;
+
+				border-radius: .625rem;
+				-moz-border-radius: .625rem;
+				-webkit-border-radius: .625rem;
+			}
+
+			#cloud1:before {
+				width: .625rem; height: .5rem;
+				position: absolute; top: -.09375rem; left: .0625rem;
+				
+				-webkit-transform: rotate(30deg);
+				transform: rotate(30deg);
+				-moz-transform: rotate(30deg);
+			}
+
+			#cloud1:after {
+				width: .75rem; height: .75rem;
+				top: -.34375rem; left: auto; right: .09375rem;
+			}
+
+			#cloud2{
+				z-index: 2;
+				width: 2.5rem; height: .5625rem;
+				background: #fff;
+				
+				border-radius: 1.25rem;
+				-moz-border-radius: 1.25rem;
+				-webkit-border-radius: 1.25rem;
+				
+				position: absolute; 
+				top: 3rem; 
+				left: 2.7rem;
+			}
+
+			#cloud2:before, #cloud2:after {
+				content: '';
+				position: absolute; 
+				background: #fff;
+				width: 1.25rem; height: 1.25rem;
+				position: absolute; bottom: -.125rem; right: .185rem;
+				
+				border-radius: 100%;
+				-moz-border-radius: 100%;
+				-webkit-border-radius: 100%;
+			}
+
+			#cloud2:after {
+				width: 1.4rem; height: 1.4rem;
+				top: -.34375rem; left: auto; left: .19rem;
+			}
+
+			#cloud1 {
+				-webkit-animation: movecloudone 65s linear infinite;
+				-moz-animation: movecloudone 65s linear infinite;
+				-o-animation: movecloudone 65s linear infinite;
+			}
+
+			@-webkit-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+			@-moz-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+			@-o-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+
+			#cloud2 {
+				-webkit-animation: movecloudtwo 75s linear infinite;
+				-moz-animation: movecloudtwo 75s linear infinite;
+				-o-animation: movecloudtwo 75s linear infinite;
+			}
+
+			@-webkit-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+			@-moz-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+			@-o-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+
+		  #peak1{
+		  	z-index: 1;
+			  display: inline-block;
+				position: absolute;
+				bottom: 0;
+				left: -1em;
+	      width: 0;
+	      height: 0;
+	      border-left:   2rem solid transparent;
+	      border-right:  2rem solid transparent;
+	      border-bottom: 4rem solid #FFC107;
+			} 
+
+			#peak1 #captop {
+					position: absolute;
+				  top: 0;
+				  left: -.66666667rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   .66666667rem solid transparent;
+		      border-right:  .66666667rem solid transparent;
+		      border-bottom: 1.33333333rem solid #ccc;
+				}
+
+			#peak1 #cap1,
+			#peak1 #cap2,
+			#peak1 #cap3,
+			#peak1 #cap4 {
+				display: inline-block;
+				position: absolute;
+			  top: 1.32rem;
+	      width: 0;
+	      height: 0;
+	      border-left:   .16666667rem solid transparent;
+	      border-right:  .16666667rem solid transparent;
+	      border-top: .33333333rem solid #ccc;
+			}
+			#peak1 #cap1 {
+				left: 0;
+			}
+			#peak1 #cap2 {
+			  right: 0;
+			}
+			#peak1 #cap3 {
+			  right: .33333333rem;
+			}
+			#peak1 #cap4 {
+			  left: .33333333rem;
+			}
+				
+			#peak2{
+				z-index: 3;
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+	      width: 0;
+	      height: 0;
+	      border-left:   3rem solid transparent;
+	      border-right:  3rem solid transparent;
+	      border-bottom: 6rem solid #FFC107;
+			}
+			#peak2 #captop {
+					position: absolute;
+				  top: 0;
+				  left: -1rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   1rem solid transparent;
+		      border-right:  1rem solid transparent;
+		      border-bottom: 2rem solid #ccc;
+				}
+
+			#peak2 #cap1,
+			#peak2 #cap2,
+			#peak2 #cap3,
+			#peak2 #cap4 {
+				display: inline-block;
+				position: absolute;
+			  top: 2rem;
+	      width: 0;
+	      height: 0;
+	      border-left:   .25rem solid transparent;
+	      border-right:  .25rem solid transparent;
+	      border-top: .5rem solid #ccc;
+			}
+			#peak2 #cap1 {
+				left: 0;
+			}
+			#peak2 #cap2 {
+			  right: 0;
+			}
+			#peak2 #cap3 {
+			  right: .5rem;
+			}
+			#peak2 #cap4 {
+			  left: .5rem;
+			}
+
+			#peak3{
+				z-index: 1;
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+				right: -1em;
+	      width: 0;
+	      height: 0;
+	      border-left:   1.5rem solid transparent;
+	      border-right:  1.5rem solid transparent;
+	      border-bottom: 3rem solid #FFC107;
+			}   
+				#peak3 #captop {
+						position: absolute;
+					  top: 0;
+					  left: -.5rem;
+			      width: 0;
+			      height: 0;
+			      border-left:   .5rem solid transparent;
+			      border-right:  .5rem solid transparent;
+			      border-bottom: 1rem solid #ccc;
+					}
+
+				#peak3 #cap1,
+				#peak3 #cap2,
+				#peak3 #cap3,
+				#peak3 #cap4 {
+					display: inline-block;
+					position: absolute;
+				  top: 1rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   .125rem solid transparent;
+		      border-right:  .125rem solid transparent;
+		      border-top: .25rem solid #ccc;
+				}
+				#peak3 #cap1 {
+					left: 0;
+				}
+				#peak3 #cap2 {
+				  right: 0;
+				}
+				#peak3 #cap3 {
+				  right: .25rem;
+				}
+				#peak3 #cap4 {
+				  left: .25rem;
+				}
+   
+	li {
+	  display: inline-block;
+	  list-style: none;
+	  background-color: #888;
+	  margin: 0;
+	  padding: 0;
+	  vertical-align: top;
+	}
+
+	#navbar {
+		 background-color: #aaa;
+		 width: 100%;
+		 text-align: left;
+	}
+
+	#navbar img {
+	  width: 5rem;
+	  height: 5rem;
+	}
+
+	#navbar a {
+	  width: 5rem;
+	  height: 5rem;
+	}
+
+	/*Projects*/
+	.projects {
+		float: left;
+	}
+
+	/*Poject_1****************************************/
+	#project_1 {
+		position: relative;
+		display: inline-block;
+		background-color: #dddddd;
+		border-radius: .3rem;
+		width: 210px;
+		height: 210px;
+		text-align: center;
+		padding: 15px 0 0 0;
+		z-index: 1;
+		
+	}
+
+	#project_1 a,
+	#project_1 a:link,
+	#project_1 a:visited, 
+	#project_1 a:hover {
+		position: absolute;
+		display: inline-block;
+		padding: 85% 24% 5% 28%;
+		color: teal;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	#project_1_image {
+		position: absolute;
+		background-image: url('../projects/quicksColorExploration/img/gif05.png');
+		z-index: 3;
+		width: 150px;
+		height: 150px;
+		top: 10%;
+		left: 14.5%;
+	}
+
+	#project_1_image:hover {
+		background-image: url('../projects/quicksColorExploration/img/project_1GIF.gif');
+		z-index: 3;
+	}
+
+	#project_1_image a {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/*Poject_1 END****************************************/
+
+	/*Poject_2****************************************/
+	#project_2 {
+		display: inline-block;
+		margin: 0 0 0 1rem;
+		position: relative;
+		background-color: #dddddd;
+		border-radius: .3rem;
+		width: 210px;
+		height: 210px;
+		text-align: center;
+		padding: 15px 0 0 0;
+		z-index: 1;
+		
+	}
+
+	#project_2 a,
+	#project_2 a:link,
+	#project_2 a:visited, 
+	#project_2 a:hover {
+		position: absolute;
+		display: inline-block;
+		padding: 85% 24% 5% 28%;
+		color: teal;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	#project_2_image {
+		position: absolute;
+		background-image: url('../projects/timetohikecalculator/img/TimeToHike.gif');
+		z-index: 3;
+		width: 150px;
+		height: 150px;
+		top: 10%;
+		left: 14.5%;
+	}
+
+	#project_2_image:hover {
+		width: 150px;
+		height: 150px;
+		background-image: url('../projects/timetohikecalculator/img/TimeToHike_GIF.gif');
+		z-index: 3;
+	}
+
+	#project_2_image a {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/*Poject_2 END****************************************/
+
+
+	@media screen and (min-width: 320px){
+		/*********************************************
+		GENERAL
+		**********************************************/
+		#logocontainter{
+			display: inline-block;
+			text-align: right;
+			width: 20%;
+    		  background-color: 999;
+		}
+
+	}
